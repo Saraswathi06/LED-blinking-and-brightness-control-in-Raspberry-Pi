@@ -11,10 +11,10 @@ GPIO.setup(12, GPIO.IN)
 for i in range(5):
  
 	# flash output pin 3
-GPIO.output(8, GPIO.HIGH)
-time.sleep(1)
-GPIO.output(8, GPIO.LOW)
-time.sleep(1)
+        GPIO.output(8, GPIO.HIGH)
+        time.sleep(1)
+        GPIO.output(8, GPIO.LOW)
+        time.sleep(1)
  
 	# read input pin 5
 	if GPIO.input(12) == GPIO.HIGH:
